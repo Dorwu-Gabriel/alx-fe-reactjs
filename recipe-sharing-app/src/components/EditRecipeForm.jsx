@@ -35,8 +35,8 @@ const LocalEditRecipeForm = ({ recipe, onSave }) => {
   const [title, setTitle] = useState(recipe?.title || '');
   const [description, setDescription] = useState(recipe?.description || '');
 
-  const handleSubmit = (e) => {
-    e.preventDefault(); // <-- This fixes the issue
+  const handleSubmit = (event) => {
+    event.preventDefault(); 
     if (onSave) {
       onSave({ ...recipe, title, description });
     }
@@ -48,7 +48,7 @@ const LocalEditRecipeForm = ({ recipe, onSave }) => {
         Title:
         <input
           value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          onChange={(event) => setTitle(event.target.value)}
           required
         />
       </label>
@@ -57,7 +57,7 @@ const LocalEditRecipeForm = ({ recipe, onSave }) => {
         Description:
         <textarea
           value={description}
-          onChange={(e) => setDescription(e.target.value)}
+          onChange={(event) => setDescription(event.target.value)}
           required
         />
       </label>
