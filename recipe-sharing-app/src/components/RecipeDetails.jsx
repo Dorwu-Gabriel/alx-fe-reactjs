@@ -5,23 +5,28 @@ import DeleteRecipeButton from './DeleteRecipeButton';
 
 const RecipeDetails = () => {
   const { id } = useParams();
+
   const recipe = useRecipeStore((state) =>
     state.recipes.find((r) => r.id === Number(id))
   );
+  const updateRecipe = useRecipeStore((state) => state.updateRecipe);
+
+  if (!recipe) {
+    return <p>Recipe not found.</p>;
+  }
+
+  const handleSave = (updatedRecipe) => {
+    updateRecipe(updatedRecipe); // Update the recipe in the store
+    // Optionally, show a success message or navigate away
+  };
 
   return (
     <div>
-      <h2>Recipe Details</h2>
-      {recipe ? (
-        <>
-          <p><strong>{recipe.title}</strong></p>
-          <p>{recipe.description}</p>
-          <EditRecipeForm recipe={recipe} />
-          <DeleteRecipeButton id={recipe.id} />
-        </>
-      ) : (
-        <p style={{ color: 'red' }}>Recipe not found.</p>
-      )}
+      <h2>{recipe.title}</h2>
+      <p>{recipe.description}</p>
+      <hr />
+      <EditRecipeForm recipe={recipe} onSave={handleSave} />
+      <DeleteRecipeButton id={recipe.id} />
     </div>
   );
 };
