@@ -31,12 +31,12 @@ const RecipeDetails = () => {
   );
 };
 
-const EditRecipeFormInner = ({ recipe, onSave }) => {
+const LocalEditRecipeForm = ({ recipe, onSave }) => {
   const [title, setTitle] = useState(recipe?.title || '');
   const [description, setDescription] = useState(recipe?.description || '');
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // <-- This fixes the issue
     if (onSave) {
       onSave({ ...recipe, title, description });
     }
