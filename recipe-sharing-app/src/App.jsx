@@ -1,14 +1,25 @@
-import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import RecipeList from './components/RecipeList';
-import AddRecipeForm from './components/AddRecipeForm';
+import AddRecipe from './components/addRecipe';
+import RecipeDetails from './components/RecipeDetails';
 
 const App = () => {
   return (
-    <div style={{ maxWidth: '600px', margin: '2rem auto', padding: '1rem' }}>
+    <div style={{ maxWidth: '600px', margin: '2rem auto' }}>
       <h1>Recipe Sharing App</h1>
-      <AddRecipeForm />
-      <hr />
-      <RecipeList />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <AddRecipe />
+              <hr />
+              <RecipeList />
+            </>
+          }
+        />
+        <Route path="/recipe/:id" element={<RecipeDetails />} />
+      </Routes>
     </div>
   );
 };
