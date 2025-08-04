@@ -4,6 +4,8 @@ export const useRecipeStore = create((set) => ({
   recipes: [],
   searchTerm: '',
   filteredRecipes: [],
+  favorites: [],
+  recommendations: [],
   setSearchTerm: (term) =>
     set((state) => {
       const filtered = state.recipes.filter(
@@ -86,5 +88,29 @@ export const useRecipeStore = create((set) => ({
           )
         : updatedRecipes;
       return { recipes: updatedRecipes, filteredRecipes: filtered };
+    }),
+  addFavorite: (recipeId) =>
+    set((state) => ({
+      favorites: [...state.favorites, recipeId],
+    })),
+  removeFavorite: (recipeId) =>
+    set((state) => ({
+      favorites: state.favorites.filter((id) => id !== recipeId),
+    })),
+  generateRecommendations: () =>
+    set((state) => {
+      // Example: recommend random favorites (customize as needed)
+      const recommended = state.recipes.filter(
+        (recipe) =>
+          !state.favorites.includes(recipe.id) &&
+          state.favorites.length > 0 &&
+          state.favorites.some((favId) =>
+            recipe.ingredients &&
+            state.recipes.find((r) => r.id === favId)?.ingredients?.some((ing) =>
+              recipe.ingredients.includes(ing)
+            )
+          )
+      );
+      return { recommendations: recommended };
     }),
 }));

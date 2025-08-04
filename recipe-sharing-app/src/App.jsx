@@ -3,6 +3,8 @@ import RecipeList from './components/RecipeList';
 import AddRecipe from './components/AddRecipeForm';
 import RecipeDetails from './components/RecipeDetails';
 import SearchBar from './components/SearchBar'; 
+import FavoritesList from './components/FavoritesList';
+import RecommendationsList from './components/RecommendationsList';
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
                 <AddRecipe />
                 <hr />
                 <RecipeList />
+                <FavoritesList />
+                <RecommendationsList />
               </>
             }
           />
