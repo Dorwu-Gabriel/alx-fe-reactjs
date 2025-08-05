@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import { searchUsers } from '../services/githubService';
 
+const fetchUserData = async (username) => {
+  try {
+    const response = await fetch(`https://api.github.com/users/${username}`);
+    return await response.json();
+  } catch {
+    throw new Error('Failed to fetch user data');
+  }
+};
+
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [location, setLocation] = useState('');
@@ -24,7 +33,7 @@ const Search = () => {
         page: 1
       });
       setSearchResults(results);
-    } catch (err) {
+    } catch {
       setError("Looks like we cant find the user");
     } finally {
       setLoading(false);
