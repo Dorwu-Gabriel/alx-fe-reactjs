@@ -9,19 +9,19 @@ const Search = () => {
   const [error, setError] = useState('');
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setError('');
-
-    try {
-      const data = await fetchUserData(searchTerm);
-      setUserData(data);
-    } catch (err) {
-      setError('Looks like we can\'t find the user');
-      setUserData(null);
-    } finally {
-      setLoading(false);
-    }
+      e.preventDefault();
+      setLoading(true);
+      setError('');
+  
+      try {
+        const data = await fetchUserData(searchTerm);
+        setUserData(data);
+      } catch (err) {
+        setError("Looks like we can't find the user");
+        setUserData(null);
+      } finally {
+        setLoading(false);
+      }
   };
 
   return (
