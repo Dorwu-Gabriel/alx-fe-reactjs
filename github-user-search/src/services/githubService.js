@@ -1,13 +1,13 @@
 import axios from 'axios';
 
 const GITHUB_API_URL = 'https://api.github.com';
-const GITHUB_SEARCH_API = `${GITHUB_API_URL}/search/users`;
+const GITHUB_SEARCH_API = `${GITHUB_API_URL}/search/users?q`;
 
 export const fetchUserData = async (username) => {
   try {
     const response = await axios.get(`${GITHUB_API_URL}/users/${username}`);
     return response.data;
-  } catch (error) {
+  } catch {
     throw new Error('Failed to fetch user data');
   }
 };
@@ -34,7 +34,7 @@ export const searchUsers = async (searchParams) => {
       total: response.data.total_count,
       hasMore: response.data.items.length > 0
     };
-  } catch (error) {
+  } catch {
     throw new Error('Failed to search users');
   }
 };
