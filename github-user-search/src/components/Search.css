@@ -39,6 +39,14 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.user-card p {
+  color: #666;
+}
+
+.user-card h2 {
+  color: #666;
+}
+
 .user-avatar {
   width: 150px;
   height: 150px;
