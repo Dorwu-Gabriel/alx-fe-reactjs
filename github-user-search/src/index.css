@@ -18,6 +18,15 @@ body{
   color: #fff;
   background-color: #242424;
 }
+
+body > div {
+  line-height: 1.6;
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 600px;
+  padding: 2rem;
+  color: #fff;
+}
 a {
   font-weight: 500;
   color: #646cff;
