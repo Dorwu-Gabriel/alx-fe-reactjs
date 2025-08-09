@@ -1,11 +1,11 @@
 import axios from 'axios';
 
-const GITHUB_API_URL = 'https://api.github.com';
-const GITHUB_SEARCH_API = `${GITHUB_API_URL}/search/users?q`;
+const GITHUB_API_URL = 'https://api.github.com/search/users?q';
+const GITHUB_SEARCH_API = `${GITHUB_API_URL}`;
 
 export const fetchUserData = async (username) => {
   try {
-    const response = await axios.get(`${GITHUB_API_URL}/users/${username}`);
+    const response = await axios.get(`${GITHUB_API_URL}`);
     return response.data;
   } catch {
     throw new Error('Failed to fetch user data');
