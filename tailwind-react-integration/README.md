@@ -1,4 +1,4 @@
-# React + Vite + Tailwind CSS
+# ALX PROJECT - TAILWINDCSS-REACT-INTEGRATION
 
 A modern React application template with Vite and Tailwind CSS pre-configured for rapid development.
 
