@@ -6,7 +6,7 @@ function UserProfile() {
           src="https://img.icons8.com/?size=100&id=11795&format=png&color=000000" 
           alt="User" 
         />
-        <h1 className="sm:text-lg md:text-xl font-bold text-center text-blue-800 my-4 transition-colors duration-300 hover:text-blue-600">John Doe</h1>
+        <h1 className="sm:text-lg md:text-xl font-bold text-center text-blue-800 my-4 transition-colors duration-300 hover:text-blue-500">John Doe</h1>
         <p className="text-gray-600 sm:text-sm md:text-base text-center transition-colors duration-300 hover:text-gray-800">
           Developer at Example Co. <br />Loves to write code and explore new technologies.
         </p>
