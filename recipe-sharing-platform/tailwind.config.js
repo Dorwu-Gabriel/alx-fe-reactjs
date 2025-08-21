@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // You can set it to 'media' or 'class' if needed
+  darkMode: 'media', // or 'class' if you want to manually toggle dark mode
   theme: {
     extend: {},
   },

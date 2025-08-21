@@ -40,9 +40,10 @@ const HomePage = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {recipes.map((recipe) => (
-          <div 
+          <Link 
+            to={`/recipe/${recipe.id}`}
             key={recipe.id}
-            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
+            className="block bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1"
           >
             <img 
               src={recipe.image} 
@@ -52,14 +53,11 @@ const HomePage = () => {
             <div className="p-6">
               <h2 className="text-2xl font-semibold text-gray-800 mb-2">{recipe.title}</h2>
               <p className="text-gray-600 mb-4">{recipe.summary}</p>
-              <Link 
-                to={`/recipe/${recipe.id}`}
-                className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded transition-colors duration-300"
-              >
+              <span className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded transition-colors duration-300">
                 View Recipe
-              </Link>
+              </span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './components/HomePage';
+import RecipeDetail from './components/RecipeDetail';
 import './App.css';
 import './index.css';
 
@@ -42,6 +43,7 @@ function App() {
         <main className="min-h-[calc(100vh-8rem)]">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/recipe/:id" element={<RecipeDetail />} />
             {/* Add more routes here as you create more pages */}
           </Routes>
         </main>

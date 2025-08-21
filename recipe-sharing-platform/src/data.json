@@ -3,36 +3,196 @@
     "id": 1,
     "title": "Spaghetti Carbonara",
     "summary": "A classic Italian pasta dish with eggs, cheese, bacon, and black pepper.",
-    "image": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2"
+    "image": "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2",
+    "prepTime": 10,
+    "cookTime": 15,
+    "servings": 4,
+    "difficulty": "Medium",
+    "ingredients": [
+      "400g spaghetti",
+      "200g pancetta or guanciale, diced",
+      "4 large eggs",
+      "50g pecorino cheese, grated",
+      "50g parmesan, grated",
+      "Freshly ground black pepper",
+      "Salt"
+    ],
+    "instructions": [
+      "Bring a large pot of salted water to boil and cook spaghetti according to package instructions.",
+      "In a bowl, whisk eggs and mix in the grated cheeses and plenty of black pepper.",
+      "In a large pan, cook the pancetta until crispy, then remove from heat.",
+      "Drain the pasta, reserving a cup of the cooking water.",
+      "Working quickly, add the hot pasta to the pancetta, then add the egg and cheese mixture, tossing rapidly.",
+      "Add a splash of the reserved cooking water to create a creamy sauce.",
+      "Season with salt if needed and serve immediately with extra grated cheese and black pepper."
+    ]
   },
   {
     "id": 2,
     "title": "Chicken Tikka Masala",
     "summary": "Chunks of grilled chicken (tikka) cooked in a smooth buttery & creamy tomato based gravy.",
-    "image": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2"
+    "image": "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2",
+    "prepTime": 20,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "Medium",
+    "ingredients": [
+      "500g boneless chicken, cut into cubes",
+      "1 cup yogurt",
+      "2 tbsp lemon juice",
+      "2 tsp cumin powder",
+      "1 tsp cinnamon",
+      "2 tsp cayenne pepper",
+      "2 tbsp butter",
+      "1 onion, chopped",
+      "3 cloves garlic, minced",
+      "1 tbsp ginger, grated",
+      "400g canned tomatoes",
+      "1 cup heavy cream",
+      "Fresh coriander for garnish"
+    ],
+    "instructions": [
+      "Marinate chicken in yogurt, lemon juice, 1 tsp cumin, cinnamon, and cayenne for 1 hour.",
+      "Grill chicken until juices run clear, about 5 minutes per side.",
+      "In a large pan, melt butter and sauté onion until soft.",
+      "Add garlic and ginger, cook for 1 minute.",
+      "Stir in remaining cumin and cook for 1 minute.",
+      "Add tomatoes and simmer for 10 minutes.",
+      "Add cream and bring to a simmer.",
+      "Add grilled chicken and simmer for 10 more minutes.",
+      "Garnish with fresh coriander and serve with rice or naan."
+    ]
   },
   {
     "id": 3,
     "title": "Vegetable Stir Fry",
     "summary": "A quick and healthy mix of fresh vegetables stir-fried with garlic and soy sauce.",
-    "image": "https://images.pexels.com/photos/725990/pexels-photo-725990.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2"
+    "image": "https://images.pexels.com/photos/725990/pexels-photo-725990.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2",
+    "prepTime": 15,
+    "cookTime": 10,
+    "servings": 3,
+    "difficulty": "Easy",
+    "ingredients": [
+      "2 tbsp vegetable oil",
+      "2 cloves garlic, minced",
+      "1 tbsp ginger, grated",
+      "1 red bell pepper, sliced",
+      "1 carrot, julienned",
+      "1 cup broccoli florets",
+      "1 cup snap peas",
+      "2 tbsp soy sauce",
+      "1 tbsp oyster sauce",
+      "1 tsp sesame oil",
+      "Sesame seeds for garnish"
+    ],
+    "instructions": [
+      "Heat oil in a wok or large pan over high heat.",
+      "Add garlic and ginger, stir for 30 seconds until fragrant.",
+      "Add vegetables starting with the ones that take longer to cook (carrots, broccoli).",
+      "Stir-fry for 3-4 minutes.",
+      "Add bell pepper and snap peas, stir-fry for another 2 minutes.",
+      "Add soy sauce, oyster sauce, and sesame oil.",
+      "Toss everything together and cook for 1 more minute.",
+      "Garnish with sesame seeds and serve immediately."
+    ]
   },
   {
     "id": 4,
     "title": "Classic Burger",
     "summary": "Juicy beef patty with cheese, lettuce, and special sauce on a toasted bun.",
-    "image": "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2"
+    "image": "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2",
+    "prepTime": 15,
+    "cookTime": 10,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      "500g ground beef (20% fat)",
+      "1 tsp salt",
+      "1/2 tsp black pepper",
+      "1 tsp garlic powder",
+      "1 tsp onion powder",
+      "4 burger buns",
+      "4 slices cheddar cheese",
+      "Lettuce leaves",
+      "Tomato slices",
+      "Red onion slices",
+      "Pickles",
+      "Ketchup and mustard"
+    ],
+    "instructions": [
+      "In a bowl, mix ground beef with salt, pepper, garlic powder, and onion powder.",
+      "Divide into 4 equal portions and form into patties slightly larger than your buns.",
+      "Make a small indentation in the center of each patty to prevent bulging.",
+      "Preheat grill or pan over medium-high heat.",
+      "Cook patties for 3-4 minutes per side for medium.",
+      "Add cheese during the last minute of cooking.",
+      "Toast the buns lightly.",
+      "Assemble burgers with your favorite toppings and condiments."
+    ]
   },
   {
     "id": 5,
     "title": "Caesar Salad",
     "summary": "Crisp romaine lettuce with garlic croutons, parmesan, and creamy Caesar dressing.",
-    "image": "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2"
+    "image": "https://images.pexels.com/photos/2097090/pexels-photo-2097090.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2",
+    "prepTime": 20,
+    "cookTime": 10,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      "2 romaine hearts, chopped",
+      "1/2 cup parmesan cheese, shaved",
+      "1 cup croutons",
+      "1/2 cup Caesar dressing",
+      "2 tbsp lemon juice",
+      "1 tsp Worcestershire sauce",
+      "1 clove garlic, minced",
+      "1/2 tsp Dijon mustard",
+      "1/4 cup olive oil",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "In a small bowl, whisk together lemon juice, Worcestershire sauce, garlic, and Dijon mustard.",
+      "Slowly whisk in olive oil until emulsified.",
+      "Season with salt and pepper to taste.",
+      "In a large bowl, combine romaine lettuce and half of the dressing.",
+      "Toss to coat the leaves evenly.",
+      "Add croutons and most of the parmesan, reserving some for garnish.",
+      "Toss again and add more dressing if needed.",
+      "Garnish with remaining parmesan and serve immediately."
+    ]
   },
   {
     "id": 6,
     "title": "Chocolate Lava Cake",
     "summary": "Warm chocolate cake with a gooey, molten center, served with vanilla ice cream.",
-    "image": "https://images.pexels.com/photos/132694/pexels-photo-132694.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2"
+    "image": "https://images.pexels.com/photos/132694/pexels-photo-132694.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2",
+    "prepTime": 15,
+    "cookTime": 12,
+    "servings": 4,
+    "difficulty": "Medium",
+    "ingredients": [
+      "100g dark chocolate (70% cocoa)",
+      "100g butter",
+      "2 eggs",
+      "2 egg yolks",
+      "50g sugar",
+      "30g all-purpose flour",
+      "Pinch of salt",
+      "Butter and cocoa powder for ramekins",
+      "Vanilla ice cream for serving"
+    ],
+    "instructions": [
+      "Preheat oven to 220°C (425°F).",
+      "Butter 4 ramekins and dust with cocoa powder.",
+      "Melt chocolate and butter together in a heatproof bowl over simmering water.",
+      "In another bowl, whisk eggs, egg yolks, and sugar until pale and thick.",
+      "Fold the melted chocolate into the egg mixture.",
+      "Sift in flour and salt, and fold until just combined.",
+      "Divide the batter among the prepared ramekins.",
+      "Bake for 10-12 minutes until the edges are set but the center is still soft.",
+      "Let sit for 1 minute, then invert onto plates.",
+      "Serve immediately with vanilla ice cream."
+    ]
   }
 ]

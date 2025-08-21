@@ -6,6 +6,15 @@
 
 A modern, responsive web application built with React and Tailwind CSS for sharing and discovering delicious recipes. This project is part of the ALX Front-End Development curriculum, focusing on building responsive UIs with React and utility-first CSS.
 
+## 🆕 Latest Updates
+
+- Added detailed Recipe View page for each recipe
+![Recipe Detail Page](./public/Recipe-Detail-Page.png)
+
+- Enhanced recipe data with complete ingredients and step-by-step instructions
+- Improved error handling and loading states
+- Responsive design for all screen sizes
+
 ## 📂 Project Structure
 
 ```
@@ -37,10 +46,18 @@ recipe-sharing-platform/
 
 - **Responsive Design**: Fully responsive layout that works on all device sizes
 - **Recipe Browsing**: View a collection of recipes with beautiful cards
-- **Recipe Details**: Detailed view for each recipe with ingredients and instructions
-- **Add New Recipes**: Intuitive form to submit your own recipes
+- **Recipe Details**: Comprehensive view for each recipe including:
+  - Complete ingredients list with measurements
+  - Step-by-step cooking instructions
+  - Preparation and cooking times
+  - Number of servings
+  - Difficulty level
 - **Modern UI**: Clean and intuitive interface built with Tailwind CSS
-- **Interactive Elements**: Hover effects and smooth transitions for better user experience
+- **Interactive Elements**: 
+  - Smooth transitions between pages
+  - Loading states for better UX
+  - Error handling for missing data
+  - Responsive image display
 
 ## 🛠️ Technologies Used
 
