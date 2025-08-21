@@ -9,9 +9,9 @@ A modern, responsive web application built with React and Tailwind CSS for shari
 ## 🆕 Latest Updates
 
 - Added detailed Recipe View page for each recipe
-![Recipe Detail Page](./public/Recipe-Detail-Page.png)
 
-
+  ![Recipe Details Page](./public/Recipe-Details-Page.png)
+  *Screenshot of the Recipe Details page*
 
 - Enhanced recipe data with complete ingredients and step-by-step instructions
 - Improved error handling and loading states
