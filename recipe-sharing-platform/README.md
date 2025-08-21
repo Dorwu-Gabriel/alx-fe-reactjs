@@ -23,12 +23,16 @@ A modern, responsive web application built with React and Tailwind CSS for shari
 recipe-sharing-platform/
 ├── public/                   # Static files
 │   ├── chef-icon.png         # Application favicon
+│   ├── Recipe-Details-Page.png # Recipe details screenshot
+│   ├── RecipeShare-HomePage.png # Homepage screenshot
 │   └── vite.svg              # Vite default logo
 ├── src/                      # Source files
 │   ├── assets/               # Static assets (images, icons, etc.)
 │   │   └── chef-icon.png     # Chef hat icon
 │   ├── components/           # Reusable React components
-│   │   └── HomePage.jsx      # Home page component
+│   │   ├── HomePage.jsx      # Home page component
+│   │   ├── RecipeDetail.jsx  # Recipe detail component
+│   │   └── AddRecipeForm.jsx # Form to add new recipes
 │   ├── App.css               # Global styles
 │   ├── App.jsx               # Main application component
 │   ├── data.json             # Recipe data

@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import RecipeDetail from './components/RecipeDetail';
+import AddRecipeForm from './components/AddRecipeForm';
 import './App.css';
 import './index.css';
 
@@ -8,7 +9,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Router>
-        <nav className="bg-white shadow-sm">
+        <nav className="sticky top-0 z-50 bg-white shadow-sm transition-colors duration-300" id="main-nav">
           <div className="max-w-7xl mx-auto px-6 py-4">
             <div className="flex items-center justify-between h-12">
               <Link 
@@ -39,19 +40,33 @@ function App() {
             </div>
           </div>
         </nav>
+        
+        {/* Add scroll event listener for navbar effect */}
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.addEventListener('scroll', function() {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 10) {
+              nav.classList.add('bg-gray-800', 'text-white');
+              nav.classList.remove('bg-white');
+            } else {
+              nav.classList.remove('bg-gray-800', 'text-white');
+              nav.classList.add('bg-white');
+            }
+          });
+        `}} />
 
         <main className="min-h-[calc(100vh-8rem)]">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/recipe/:id" element={<RecipeDetail />} />
-            {/* Add more routes here as you create more pages */}
+            <Route path="/add-recipe" element={<AddRecipeForm />} />
           </Routes>
         </main>
 
         <footer className="bg-white border-t border-gray-200">
           <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
             <p className="text-center text-gray-500 text-sm">
-              &copy; {new Date().getFullYear()} RecipeShare. All rights reserved.
+              &copy; {new Date().getFullYear()} RecipeShare. All rights reserved. Created By Dorwu-Gabriel
             </p>
           </div>
         </footer>

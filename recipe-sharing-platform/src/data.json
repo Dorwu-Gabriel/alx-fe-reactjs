@@ -194,5 +194,137 @@
       "Let sit for 1 minute, then invert onto plates.",
       "Serve immediately with vanilla ice cream."
     ]
+  },
+  {
+    "id": 7,
+    "title": "Jollof Rice with Chicken",
+    "summary": "Aromatic one-pot rice dish cooked in a rich tomato and pepper sauce, served with fried chicken.",
+    "image": "https://images.pexels.com/photos/12737656/pexels-photo-12737656.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2",
+    "prepTime": 30,
+    "cookTime": 60,
+    "servings": 6,
+    "difficulty": "Medium",
+    "ingredients": [
+      "3 cups long-grain rice",
+      "1 whole chicken, cut into pieces",
+      "4 large tomatoes, blended",
+      "2 red bell peppers, blended",
+      "2 scotch bonnet peppers",
+      "1 large onion, sliced",
+      "3 cloves garlic, minced",
+      "1 thumb ginger, grated",
+      "2 cups chicken stock",
+      "1/4 cup vegetable oil",
+      "2 tbsp tomato paste",
+      "1 tsp thyme",
+      "1 tsp curry powder",
+      "2 bay leaves",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Season chicken with salt, pepper, and half of the thyme. Let marinate for 30 minutes.",
+      "In a large pot, heat oil and brown chicken pieces. Remove and set aside.",
+      "In the same pot, sauté onions until translucent. Add garlic and ginger, cook for 1 minute.",
+      "Add blended tomatoes, peppers, tomato paste, and spices. Cook until sauce thickens.",
+      "Add rice and stir to coat with the sauce. Pour in chicken stock and bring to a boil.",
+      "Reduce heat to low, cover, and simmer for 30-40 minutes until rice is cooked.",
+      "Return chicken to the pot during the last 15 minutes of cooking.",
+      "Let rest for 10 minutes before serving. Fluff with a fork and serve hot."
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Waakye",
+    "summary": "A hearty dish of rice and beans cooked in millet leaves, served with a variety of sides.",
+    "image": "https://images.pexels.com/photos/12737663/pexels-photo-12737663.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2",
+    "prepTime": 20,
+    "cookTime": 90,
+    "servings": 6,
+    "difficulty": "Medium",
+    "ingredients": [
+      "2 cups rice",
+      "1 cup black-eyed peas or cowpeas",
+      "10-12 dried millet leaves (waakye leaves) or 2 tea bags",
+      "1 tsp baking soda",
+      "1 tsp salt",
+      "Water for cooking",
+      "For serving: gari, spaghetti, fried plantains, boiled eggs, shito (pepper sauce), and salad"
+    ],
+    "instructions": [
+      "Soak beans overnight or for at least 4 hours. Drain and rinse.",
+      "In a large pot, combine beans, millet leaves, and enough water to cover by 2 inches. Bring to a boil.",
+      "Reduce heat and simmer for 30 minutes or until beans are tender but not mushy.",
+      "Add rice, baking soda, and salt. Add more water if needed (about 1 inch above rice level).",
+      "Cover and cook on low heat for 25-30 minutes until rice is tender and liquid is absorbed.",
+      "Remove millet leaves and fluff the rice with a fork.",
+      "Serve hot with your choice of sides like gari, spaghetti, fried plantains, boiled eggs, shito, and salad."
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Banku with Okro Soup",
+    "summary": "Fermented corn and cassava dough balls served with a flavorful okra soup and fish.",
+    "image": "https://images.pexels.com/photos/12737664/pexels-photo-12737664.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2",
+    "prepTime": 60,
+    "cookTime": 30,
+    "servings": 4,
+    "difficulty": "Hard",
+    "ingredients": [
+      "2 cups corn dough",
+      "1 cup cassava dough",
+      "Water",
+      "1 tsp salt",
+      "For the soup:",
+      "500g fresh okra, chopped",
+      "2 medium tomatoes, blended",
+      "1 onion, chopped",
+      "2 cloves garlic, minced",
+      "1-inch ginger, grated",
+      "2 tbsp palm oil",
+      "500g fish (tilapia or mackerel)",
+      "1-2 scotch bonnet peppers",
+      "Salt to taste"
+    ],
+    "instructions": [
+      "For the banku: Mix corn dough and cassava dough with water to make a smooth paste.",
+      "Allow to ferment for 1-3 days in a warm place (or use instant banku mix).",
+      "In a non-stick pot, cook the fermented dough over medium heat, stirring constantly with a wooden spoon.",
+      "Add water as needed to prevent burning and achieve a smooth, stretchy consistency.",
+      "For the soup: Heat palm oil in a pot and sauté onions, garlic, and ginger.",
+      "Add blended tomatoes and cook until thickened. Add fish and enough water to cover.",
+      "Simmer for 10 minutes, then add chopped okra and peppers. Cook for another 5-10 minutes.",
+      "Season with salt and serve hot with banku."
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Kelewele",
+    "summary": "Spicy fried plantains, a popular Ghanaian street food snack.",
+    "image": "https://images.pexels.com/photos/12737665/pexels-photo-12737665.jpeg?auto=compress&cs=tinysrgb&w=500&h=350&dpr=2",
+    "prepTime": 15,
+    "cookTime": 15,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      "4 ripe but firm plantains",
+      "1 small onion, grated",
+      "1-inch ginger, grated",
+      "2-3 cloves garlic, minced",
+      "1 tsp anise seeds (optional)",
+      "1/2 tsp cayenne pepper",
+      "1/2 tsp ground nutmeg",
+      "1/2 tsp ground cloves",
+      "1 tsp salt",
+      "Vegetable oil for frying"
+    ],
+    "instructions": [
+      "Peel plantains and cut into bite-sized cubes.",
+      "In a large bowl, mix all spices with grated onion, ginger, and garlic.",
+      "Add plantain pieces to the spice mixture and toss to coat evenly. Let marinate for 10-15 minutes.",
+      "Heat oil in a deep pan over medium-high heat.",
+      "Fry plantains in batches until golden brown and crispy on the outside, about 3-4 minutes per batch.",
+      "Remove with a slotted spoon and drain on paper towels.",
+      "Serve hot as a snack or side dish."
+    ]
   }
 ]
