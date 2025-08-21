@@ -3,6 +3,7 @@
 ![RecipeShare Homepage](./public/RecipeShare-HomePage.png)
 
 *Screenshot of the RecipeShare homepage*
+
 A modern, responsive web application built with React and Tailwind CSS for sharing and discovering delicious recipes. This project is part of the ALX Front-End Development curriculum, focusing on building responsive UIs with React and utility-first CSS.
 
 ## 📂 Project Structure
