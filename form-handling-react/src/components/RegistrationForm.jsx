@@ -20,17 +20,17 @@ const RegistrationForm = () => {
   const [formErrors, setFormErrors] = useState({});
   const validateForm = (values) => {
     const errors = {};
-    if (!values.username) {
+    if (!username) {
       errors.username = 'Username is required';
     }
-    if (!values.email) {
+    if (!email) {
       errors.email = 'Email is required';
-    } else if (!/\S+@\S+\.\S+/.test(values.email)) {
+    } else if (!/\S+@\S+\.\S+/.test(email)) {
       errors.email = 'Email is invalid';
     }
-    if (!values.password) {
+    if (!password) {
       errors.password = 'Password is required';
-    } else if (values.password.length < 6) {
+    } else if (password.length < 6) {
       errors.password = 'Password must be at least 6 characters';
     }
     return errors;
