@@ -17,12 +17,38 @@ const validationSchema = Yup.object().shape({
 
 const RegistrationForm = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const handleSubmit = (values, { setSubmitting, resetForm }) => {
+  const [formErrors, setFormErrors] = useState({});
+  const validateForm = (values) => {
+    const errors = {};
+    if (!values.username) {
+      errors.username = 'Username is required';
+    }
+    if (!values.email) {
+      errors.email = 'Email is required';
+    } else if (!/\S+@\S+\.\S+/.test(values.email)) {
+      errors.email = 'Email is invalid';
+    }
+    if (!values.password) {
+      errors.password = 'Password is required';
+    } else if (values.password.length < 6) {
+      errors.password = 'Password must be at least 6 characters';
+    }
+    return errors;
+  };
+
+  const handleSubmit = (values, { setSubmitting, setErrors }) => {
+    const errors = validateForm(values);
+    if (Object.keys(errors).length > 0) {
+      setErrors(errors);
+      setSubmitting(false);
+      return;
+    }
+    
     console.log('Form submitted:', values);
     // Here you would typically make an API call
     setIsSubmitted(true);
     setSubmitting(false);
-    // resetForm(); // Uncomment to reset form after submission
+    setFormErrors({});
   };
 
   return (
@@ -34,7 +60,9 @@ const RegistrationForm = () => {
           email: '',
           password: ''
         }}
-        validationSchema={validationSchema}
+        validate={validateForm}
+        validateOnChange={false}
+        validateOnBlur={false}
         onSubmit={handleSubmit}
       >
         {({ isSubmitting, errors, touched }) => (
@@ -46,9 +74,11 @@ const RegistrationForm = () => {
                 id="username"
                 name="username"
                 value={username}
-                className={errors.username && touched.username ? 'error' : ''}
+                className={(errors.username || formErrors.username) ? 'error' : ''}
               />
-              <ErrorMessage name="username" component="span" className="error-message" />
+              <ErrorMessage name="username" component="span" className="error-message">
+                {msg => <div className="error-message">{msg}</div>}
+              </ErrorMessage>
             </div>
             
             <div className="form-group">
@@ -58,9 +88,11 @@ const RegistrationForm = () => {
                 id="email"
                 name="email"
                 value={email}
-                className={errors.email && touched.email ? 'error' : ''}
+                className={(errors.email || formErrors.email) ? 'error' : ''}
               />
-              <ErrorMessage name="email" component="span" className="error-message" />
+              <ErrorMessage name="email" component="span" className="error-message">
+                {msg => <div className="error-message">{msg}</div>}
+              </ErrorMessage>
             </div>
             
             <div className="form-group">
@@ -70,9 +102,11 @@ const RegistrationForm = () => {
                 id="password"
                 name="password"
                 value={password}
-                className={errors.password && touched.password ? 'error' : ''}
+                className={(errors.password || formErrors.password) ? 'error' : ''}
               />
-              <ErrorMessage name="password" component="span" className="error-message" />
+              <ErrorMessage name="password" component="span" className="error-message">
+                {msg => <div className="error-message">{msg}</div>}
+              </ErrorMessage>
             </div>
             
             <button 
