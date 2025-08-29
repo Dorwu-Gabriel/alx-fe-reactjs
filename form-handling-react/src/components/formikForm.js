@@ -4,15 +4,18 @@ import * as Yup from 'yup';
 
 const validationSchema = Yup.object().shape({
   username: Yup.string()
+    .string('Username must be a string')
+    .required('Username is required')
     .min(3, 'Username must be at least 3 characters')
-    .max(20, 'Username must be 20 characters or less')
-    .required('Username is required'),
+    .max(20, 'Username must be 20 characters or less'),
   email: Yup.string()
-    .email('Invalid email address')
-    .required('Email is required'),
+    .string('Email must be a string')
+    .required('Email is required')
+    .email('Invalid email address'),
   password: Yup.string()
+    .string('Password must be a string')
+    .required('Password is required')
     .min(6, 'Password must be at least 6 characters')
-    .required('Password is required'),
 });
 
 const FormikForm = () => {
