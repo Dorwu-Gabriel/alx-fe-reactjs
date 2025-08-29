@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Formik, Form, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
@@ -15,10 +16,11 @@ const validationSchema = Yup.object().shape({
 });
 
 const RegistrationForm = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const handleSubmit = (values, { setSubmitting, resetForm }) => {
     console.log('Form submitted:', values);
     // Here you would typically make an API call
-    // For now, we'll just log to console
+    setIsSubmitted(true);
     setSubmitting(false);
     // resetForm(); // Uncomment to reset form after submission
   };
@@ -78,7 +80,7 @@ const RegistrationForm = () => {
               className="submit-btn"
               disabled={isSubmitting}
             >
-              {isSubmitting ? 'Submitting...' : 'Register'}
+              {isSubmitted ? 'Submitted!' : (isSubmitting ? 'Submitting...' : 'Register')}
             </button>
           </Form>
         )}
