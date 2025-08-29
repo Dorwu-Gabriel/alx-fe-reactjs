@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
@@ -15,6 +16,20 @@ const validationSchema = Yup.object().shape({
 });
 
 const RegistrationForm = () => {
+  const [formData, setFormData] = useState({
+    username: '',
+    email: '',
+    password: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
   const handleSubmit = (values, { setSubmitting, resetForm }) => {
     console.log('Form submitted:', values);
     // Here you would typically make an API call
@@ -39,10 +54,12 @@ const RegistrationForm = () => {
           <Form>
             <div className="form-group">
               <label htmlFor="username">Username</label>
-              <Field
+              <input
                 type="text"
                 id="username"
                 name="username"
+                value={formData.username}
+                onChange={handleChange}
                 className={errors.username && touched.username ? 'error' : ''}
               />
               <ErrorMessage name="username" component="span" className="error-message" />
@@ -50,10 +67,12 @@ const RegistrationForm = () => {
             
             <div className="form-group">
               <label htmlFor="email">Email</label>
-              <Field
+              <input
                 type="email"
                 id="email"
                 name="email"
+                value={formData.email}
+                onChange={handleChange}
                 className={errors.email && touched.email ? 'error' : ''}
               />
               <ErrorMessage name="email" component="span" className="error-message" />
@@ -61,10 +80,12 @@ const RegistrationForm = () => {
             
             <div className="form-group">
               <label htmlFor="password">Password</label>
-              <Field
+              <input
                 type="password"
                 id="password"
                 name="password"
+                value={formData.password}
+                onChange={handleChange}
                 className={errors.password && touched.password ? 'error' : ''}
               />
               <ErrorMessage name="password" component="span" className="error-message" />

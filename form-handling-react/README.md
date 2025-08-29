@@ -1,12 +1,75 @@
-# React + Vite
+# React Form Handling with Formik
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application demonstrating form handling, validation, and testing using Formik and Yup. This project showcases best practices for building accessible, user-friendly forms in React.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📝 Form handling with Formik
+- ✅ Form validation using Yup
+- 🎨 Responsive and accessible UI
+- 🧪 Comprehensive test coverage
+- ⚡ Built with Vite for fast development
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 18
+- Formik 2.4.6
+- Yup 1.7.0
+- Vite 7.1.2
+- React Testing Library
+- ESLint + Prettier
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 16+ installed
+- npm or yarn package manager
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Dorwu-Gabriel/alx-fe-reactjs.git
+   cd alx-fe-reactjs
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+## 🧪 Running Tests
+
+```bash
+npm test
+# or
+yarn test
+```
+
+## 📦 Building for Production
+
+```bash
+npm run build
+# or
+yarn build
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
