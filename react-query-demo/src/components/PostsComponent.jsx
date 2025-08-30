@@ -13,6 +13,7 @@ export default function PostsComponent() {
     staleTime: 5000, // cache data for 5s
     gcTime: 1000 * 60 * 5, // keep data for 5 mins before garbage collection (renamed from cacheTime in v5)
     refetchOnWindowFocus: false, // prevent refetch when switching tabs
+    keepPreviousData: true // keep previous data while fetching new data
   })
 
   if (isLoading) return <p>Loading posts...</p>
